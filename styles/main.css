@@ -1,0 +1,80 @@
+.navbar {
+  max-width: 1160px;
+  margin: auto;
+}
+
+.nav-container {
+  max-width: 1300px;
+  margin: auto;
+  background-color: white;
+}
+
+.nav-item {
+  border: 2px solid black;
+  color: hsl(108, 6%, 46%);
+  font-weight: 500;
+  transition: color ease-in-out 0.2s;
+  background-color: red;
+}
+.nav-item:hover {
+  color: rgb(86, 95, 86);
+}
+
+.collapse {
+  background-color: rgb(22, 36, 221);
+}
+
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
+@media (min-width: 1200px) {
+  .container .carousel-control-prev {
+    left: -110px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container .carousel-control-next {
+    right: -110px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+.carousel-top {
+  max-width: 1160px;
+}
+
+.hero-text {
+  max-width: 46rem;
+  margin-top: 7rem;
+}
+
+p {
+  font-weight: 500;
+  color: rgb(70, 70, 71);
+  line-height: 1.8rem;
+}
+
+.link-button {
+  display: block;
+  padding: 0.9rem 2rem;
+  background-color: hsl(108, 6%, 46%);
+  text-align: center;
+  color: white;
+  box-shadow: -1px 3px 6px rgba(0, 0, 0, 0.13);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  transition: background-color ease-in-out 0.2s;
+  text-decoration: none;
+  margin-bottom: 9rem;
+}
+.link-button:hover {
+  color: white;
+  text-decoration: none;
+  background-color: rgb(86, 95, 86);
+}/*# sourceMappingURL=main.css.map */

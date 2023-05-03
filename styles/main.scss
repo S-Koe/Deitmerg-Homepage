@@ -1,0 +1,66 @@
+$text-primary: rgb(70, 70, 71);
+$primary: hsl(108, 6%, 46%/1);
+
+@import "nav";
+
+
+*{  
+    font-family: 'Ubuntu', sans-serif;    
+}
+
+.container .carousel-control-prev {     
+    @media (min-width: 1200px) {
+        left: -110px;      
+    }
+}
+
+.container .carousel-control-next {  
+    
+    @media (min-width: 1200px) {
+        right: -110px;      
+    }  
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1300px;
+    }
+}
+
+.carousel-top {
+    max-width: 1160px;
+}
+
+.hero-text {
+    max-width: 46rem;
+    margin-top: 7rem; 
+}
+
+p {
+    font-weight: 500;
+    color: $text-primary;      
+    line-height: 1.8rem;  
+}
+
+.link-button{
+    display: block;
+    // width: 14rem;
+    // height: 3rem;
+    padding: 0.9rem 2rem;
+    background-color: $primary;
+    text-align: center;
+    color: white;
+    box-shadow: -1px 3px 6px rgba(0,0,0,0.13);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    transition: background-color ease-in-out .2s;
+    text-decoration: none;
+    margin-bottom: 9rem;
+    
+
+        &:hover {            
+            color: white;
+            text-decoration: none;
+            background-color: rgb(86, 95, 86);   	
+        }
+}
