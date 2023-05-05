@@ -7,14 +7,13 @@
     max-width: 1300px;    
     margin: auto;
     background-color: white;
+    z-index: 9999;
 }
 
-.nav-item {
-    border: 2px solid black;    
+.nav-item {      
     color: $primary;
     font-weight: 500;    
-    transition: color ease-in-out .2s;
-    background-color: red;
+    transition: color ease-in-out .2s;    
         &:hover{
             color: rgb(86, 95, 86);            
             
@@ -22,8 +21,19 @@
      
 }
 
-.collapse {
-    background-color: rgb(22, 36, 221);    
+.navbar-collapse {    
+    padding-top: 1.25rem;   
+    background-color: white;
 }
 
+@media (max-width: 1200px) {
+    .navbar-collapse {
+        padding-left: 2.5rem;        
+        margin: auto 0;          
 
+    }
+
+    .navbar-brand {
+        padding-left: 2rem;
+    }
+}
