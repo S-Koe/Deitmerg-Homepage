@@ -5,7 +5,8 @@ $primary: hsla(108, 6%, 46%, 1);
 
 
 *{  
-    font-family: 'Ubuntu', sans-serif;    
+    font-family: 'Ubuntu', sans-serif; 
+    overflow-x: hidden;
     
 }
 
@@ -29,8 +30,8 @@ $primary: hsla(108, 6%, 46%, 1);
 }
 
 .hero-text {
-    max-width: 46rem;
-    margin-top: 7rem; 
+    margin-top: 7rem;
+    max-width: 46rem;  
 }
 
 p {
@@ -40,8 +41,7 @@ p {
 }
 
 .link-button{
-    display: block;
-    width: 15rem;    
+    display: block;      
     padding: 0.9rem 2rem;
     background-color: $primary;
     text-align: center;
@@ -50,8 +50,7 @@ p {
     font-weight: 500;
     letter-spacing: 0.04em;
     transition: background-color ease-in-out .2s;
-    text-decoration: none;
-    margin-bottom: 9rem;
+    text-decoration: none;    
     
 
         &:hover {            
@@ -62,6 +61,10 @@ p {
         &:nth-child(2) {
             width: 16rem;
         }
+}
+
+.top-button {
+    margin-bottom: 9rem;
 }
 
 .text-aside h1 {
@@ -95,62 +98,127 @@ p {
     }
 }
 
-h2 {
-    color: white;
-    text-align: center;    
+h2 {     
+    color: $primary;
     font-size: 2.5rem;
-    font-weight: 900;  
+    font-weight: 900;     
 }
 
-.card-container-1 {       
-    background-color: $primary;
-    height: 1000px;
-    width: 100%;  
-    h2 {
-        padding: 6rem 0 4rem 0;           
-    }  
-    .termin-button {
-        background-color: white;
-        color: $primary;        
-        width: 16rem;
-        margin: 4rem 0 8rem 0;
-        &:hover {            
-            color: rgb(46, 70, 44);
-            text-decoration: none;
-            background-color: rgb(237, 240, 243);   	
-        }      
-    }
-    .card-wrapper {
-        width: 100%;
-    }
-}
-
-.vert-card {
-    width: 320px;
-        
-    img {
-        width: inherit;
-    }
-}
-
-.card-top {
-    background-color: white;
-    width: inherit;
-    padding: 2rem;  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;  
-    .link-button {
-        width: 12.7rem;
-        margin: 0;            
-    }
+.section-header h2 {
+    color: white;
+    text-align: center; 
+    padding-bottom: 1.5em; 
 }
 
 h3 {
     color: $primary;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.3rem;    
 }
 
 
+.card-img-overlay a {
+    margin: 0 0 3em 0;
+    padding: 1em 2em;
+    background-color: white;
+    color: $primary;
+    &:hover {            
+        color: rgb(77, 85, 75);            
+        background-color: rgb(237, 240, 243);             
+    }   
+    
+    @media (max-width: 1200px){
+        margin-bottom: 1rem;
+    }
+
+    @media (max-width: 900px) {
+        margin: 0px;
+    }
+}
+
+.card-wrapper-1 {
+    background-color: $primary;
+    padding: 6em 8em;  
+    
+    .card-body-top {  
+        padding: 3.5em 1.5em;              
+              
+        a {
+            width: 209px;  
+            margin: 0 auto;         
+            
+        }         
+        
+        h3 {
+            color: $primary;
+        }
+    }
+
+    .card {
+        border-radius: 0;
+        img {
+            border-radius: 0;
+        }
+    }
+
+    .card-group {
+        @media (max-width: 1200px) {         
+            flex-direction: column;   
+            max-width: 25rem;      
+        }        
+
+    }   
+
+    .termin-button {
+        background-color: white;
+        color: $primary;              
+        width: 16em;
+        margin: 4em auto 0;
+        &:hover {            
+            color: rgb(77, 85, 75);            
+            background-color: rgb(237, 240, 243);             
+        }     
+    }
+}
+
+.text-bottom {
+    max-width: 42rem;
+    margin: 6rem 0;
+}
+
+.hor-card {
+    max-width: 55%;
+    border-radius: 0;
+    text-align: center;
+    margin-bottom: 4rem;
+    box-shadow: 5px 3px 3px rgb(182, 181, 181);
+    
+    img {
+        width: 50%;
+    }
+    .card-body {
+        background-color: $primary;
+        color: white;
+        padding: 4em 2.6em;
+        width: 50%;
+        p {
+            color: white;
+            font-weight: 400;
+        }
+
+        h3 {
+            padding-bottom: 1em;
+        }       
+    }
+
+    @media (max-width: 1200px) {
+        flex-direction: column !important;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+        .card-body {
+            width: 100%;
+        }
+    }
+}

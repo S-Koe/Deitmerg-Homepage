@@ -35,6 +35,7 @@
 }
 * {
   font-family: "Ubuntu", sans-serif;
+  overflow-x: hidden;
 }
 
 @media (min-width: 1400px) {
@@ -55,8 +56,8 @@
 }
 
 .hero-text {
-  max-width: 46rem;
   margin-top: 7rem;
+  max-width: 46rem;
 }
 
 p {
@@ -67,7 +68,6 @@ p {
 
 .link-button {
   display: block;
-  width: 15rem;
   padding: 0.9rem 2rem;
   background-color: hsl(108, 6%, 46%);
   text-align: center;
@@ -77,7 +77,6 @@ p {
   letter-spacing: 0.04em;
   transition: background-color ease-in-out 0.2s;
   text-decoration: none;
-  margin-bottom: 9rem;
 }
 .link-button:hover {
   color: white;
@@ -86,6 +85,10 @@ p {
 }
 .link-button:nth-child(2) {
   width: 16rem;
+}
+
+.top-button {
+  margin-bottom: 9rem;
 }
 
 .text-aside h1 {
@@ -113,58 +116,118 @@ p {
   }
 }
 h2 {
-  color: white;
-  text-align: center;
+  color: hsl(108, 6%, 46%);
   font-size: 2.5rem;
   font-weight: 900;
 }
 
-.card-container-1 {
-  background-color: hsl(108, 6%, 46%);
-  height: 1000px;
-  width: 100%;
-}
-.card-container-1 h2 {
-  padding: 6rem 0 4rem 0;
-}
-.card-container-1 .termin-button {
-  background-color: white;
-  color: hsl(108, 6%, 46%);
-  width: 16rem;
-  margin: 4rem 0 8rem 0;
-}
-.card-container-1 .termin-button:hover {
-  color: rgb(46, 70, 44);
-  text-decoration: none;
-  background-color: rgb(237, 240, 243);
-}
-.card-container-1 .card-wrapper {
-  width: 100%;
-}
-
-.vert-card {
-  width: 320px;
-}
-.vert-card img {
-  width: inherit;
-}
-
-.card-top {
-  background-color: white;
-  width: inherit;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.section-header h2 {
+  color: white;
   text-align: center;
-}
-.card-top .link-button {
-  width: 12.7rem;
-  margin: 0;
+  padding-bottom: 1.5em;
 }
 
 h3 {
   color: hsl(108, 6%, 46%);
   font-weight: bold;
   font-size: 1.3rem;
+}
+
+.card-img-overlay a {
+  margin: 0 0 3em 0;
+  padding: 1em 2em;
+  background-color: white;
+  color: hsl(108, 6%, 46%);
+}
+.card-img-overlay a:hover {
+  color: rgb(77, 85, 75);
+  background-color: rgb(237, 240, 243);
+}
+@media (max-width: 1200px) {
+  .card-img-overlay a {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 900px) {
+  .card-img-overlay a {
+    margin: 0px;
+  }
+}
+
+.card-wrapper-1 {
+  background-color: hsl(108, 6%, 46%);
+  padding: 6em 8em;
+}
+.card-wrapper-1 .card-body-top {
+  padding: 3.5em 1.5em;
+}
+.card-wrapper-1 .card-body-top a {
+  width: 209px;
+  margin: 0 auto;
+}
+.card-wrapper-1 .card-body-top h3 {
+  color: hsl(108, 6%, 46%);
+}
+.card-wrapper-1 .card {
+  border-radius: 0;
+}
+.card-wrapper-1 .card img {
+  border-radius: 0;
+}
+@media (max-width: 1200px) {
+  .card-wrapper-1 .card-group {
+    flex-direction: column;
+    max-width: 25rem;
+  }
+}
+.card-wrapper-1 .termin-button {
+  background-color: white;
+  color: hsl(108, 6%, 46%);
+  width: 16em;
+  margin: 4em auto 0;
+}
+.card-wrapper-1 .termin-button:hover {
+  color: rgb(77, 85, 75);
+  background-color: rgb(237, 240, 243);
+}
+
+.text-bottom {
+  max-width: 42rem;
+  margin: 6rem 0;
+}
+
+.hor-card {
+  max-width: 55%;
+  border-radius: 0;
+  text-align: center;
+  margin-bottom: 4rem;
+  box-shadow: 5px 3px 3px rgb(182, 181, 181);
+}
+.hor-card img {
+  width: 50%;
+}
+.hor-card .card-body {
+  background-color: hsl(108, 6%, 46%);
+  color: white;
+  padding: 4em 2.6em;
+  width: 50%;
+}
+.hor-card .card-body p {
+  color: white;
+  font-weight: 400;
+}
+.hor-card .card-body h3 {
+  padding-bottom: 1em;
+}
+@media (max-width: 1200px) {
+  .hor-card {
+    flex-direction: column !important;
+    width: 100%;
+  }
+  .hor-card img {
+    width: 100%;
+  }
+  .hor-card .card-body {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
