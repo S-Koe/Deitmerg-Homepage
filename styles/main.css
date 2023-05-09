@@ -35,7 +35,6 @@
 }
 * {
   font-family: "Ubuntu", sans-serif;
-  overflow-x: hidden;
 }
 
 @media (min-width: 1400px) {
@@ -115,6 +114,15 @@ p {
     max-height: 300px;
   }
 }
+.white-control {
+  width: 66px;
+  max-height: 66px;
+  position: absolute;
+  top: 50%;
+  margin-top: -33px;
+  opacity: 1;
+  max-width: none;
+}
 h2 {
   color: hsl(108, 6%, 46%);
   font-size: 2.5rem;
@@ -133,23 +141,23 @@ h3 {
   font-size: 1.3rem;
 }
 
-.card-img-overlay a {
+.background a {
   margin: 0 0 3em 0;
   padding: 1em 2em;
   background-color: white;
   color: hsl(108, 6%, 46%);
 }
-.card-img-overlay a:hover {
+.background a:hover {
   color: rgb(77, 85, 75);
   background-color: rgb(237, 240, 243);
 }
 @media (max-width: 1200px) {
-  .card-img-overlay a {
+  .background a {
     margin-bottom: 1rem;
   }
 }
 @media (max-width: 900px) {
-  .card-img-overlay a {
+  .background a {
     margin: 0px;
   }
 }
@@ -230,4 +238,20 @@ h3 {
   .hor-card .card-body {
     width: 100%;
   }
+}
+
+.rating-wrapper h2 {
+  margin: 2em 0 0 0 !important;
+  color: white;
+}
+.rating-wrapper .link-button {
+  display: inline-block;
+  padding: 1em 1.6em;
+  margin: 0 auto !important;
+}
+.rating-wrapper .card {
+  flex: 1 1 0;
+  padding: 2rem 4rem;
+  justify-content: space-around;
+  border-radius: 0;
 }/*# sourceMappingURL=main.css.map */
