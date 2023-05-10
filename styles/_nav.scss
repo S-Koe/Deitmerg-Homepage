@@ -1,22 +1,30 @@
 .navbar {    
-    max-width: 1160px;
+    max-width: 72.5rem;
     margin: auto;    
 }
 
 .nav-container {
-    max-width: 1300px;    
+    max-width: 87rem;    
     margin: auto;
     background-color: white;
-    z-index: 9999;
+    z-index: 9999;    
 }
+
+
 
 .nav-item {      
     color: $primary;
     font-weight: 500;    
     transition: color ease-in-out .2s;    
+    text-decoration: underline;  
+    text-decoration-thickness: 2px;  
+    text-decoration-color: transparent;
+    transition: text-decoration .2s ease-in-out;
+    text-underline-offset: 6px;  
         &:hover{
-            color: rgb(86, 95, 86);            
-            
+            color: rgb(86, 95, 86);     
+            text-decoration: underline;   
+            text-decoration-thickness: 2px;            
         }   
      
 }

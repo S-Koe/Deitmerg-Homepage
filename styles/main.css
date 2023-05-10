@@ -1,10 +1,10 @@
 .navbar {
-  max-width: 1160px;
+  max-width: 72.5rem;
   margin: auto;
 }
 
 .nav-container {
-  max-width: 1300px;
+  max-width: 87rem;
   margin: auto;
   background-color: white;
   z-index: 9999;
@@ -14,9 +14,18 @@
   color: hsl(108, 6%, 46%);
   font-weight: 500;
   transition: color ease-in-out 0.2s;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: transparent;
+  transition: -webkit-text-decoration 0.2s ease-in-out;
+  transition: text-decoration 0.2s ease-in-out;
+  transition: text-decoration 0.2s ease-in-out, -webkit-text-decoration 0.2s ease-in-out;
+  text-underline-offset: 6px;
 }
 .nav-item:hover {
   color: rgb(86, 95, 86);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 .navbar-collapse {
@@ -37,21 +46,28 @@
   font-family: "Ubuntu", sans-serif;
 }
 
-@media (min-width: 1400px) {
-  .carousel-top .carousel-control-prev {
-    left: -6.8rem;
-  }
-  .carousel-top .carousel-control-next {
-    right: -6.8rem;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1300px;
-  }
-}
 .carousel-top {
-  max-width: 1160px;
+  max-width: 75rem;
+  padding: 0 1rem;
+  width: 100%;
+}
+.carousel-top .carousel-control-next img {
+  right: -1.5rem;
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  margin-top: -25px;
+}
+.carousel-top .carousel-control-prev img {
+  left: -1.5rem;
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  margin-top: -25px;
 }
 
 .hero-text {
@@ -94,15 +110,17 @@ p {
   color: hsl(108, 6%, 46%);
   font-weight: bold;
   margin-bottom: 2rem;
-  max-height: 600px;
+  max-height: 37rem;
   font-size: 1.7rem;
 }
 
-.carousel-aside img {
-  height: 600px;
+.carousel-aside .carousel-inner img {
+  height: 37rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .double-container {
     flex-direction: column;
   }
@@ -110,19 +128,20 @@ p {
     padding: 5rem 0 5rem 0;
     width: 100% !important;
   }
-  .double-container .carousel-aside img {
-    max-height: 300px;
+  .double-container .carousel-aside .carousel-inner img {
+    height: 300px;
   }
 }
 .white-control {
-  width: 66px;
-  max-height: 66px;
+  width: 3.5rem;
+  height: 3.5rem;
   position: absolute;
   top: 50%;
-  margin-top: -33px;
-  opacity: 1;
+  margin-top: -1.75rem;
+  opacity: 0.9;
   max-width: none;
 }
+
 h2 {
   color: hsl(108, 6%, 46%);
   font-size: 2.5rem;
@@ -168,6 +187,9 @@ h3 {
 }
 .card-wrapper-1 .card-body-top {
   padding: 3.5em 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .card-wrapper-1 .card-body-top a {
   width: 209px;
@@ -240,18 +262,56 @@ h3 {
   }
 }
 
+.rating-wrapper {
+  background-image: url("/images/jason-leem-50bzI1F6urA-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: hsl(108, 6%, 46%);
+}
 .rating-wrapper h2 {
-  margin: 2em 0 0 0 !important;
+  padding: 5rem;
+}
+.rating-wrapper .rating-group {
+  max-width: 80%;
+}
+.rating-wrapper .card-rating {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  padding: 2rem 3rem;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.card-carousel-wrapper {
+  background-color: hsl(108, 6%, 46%);
+  width: 100%;
+  padding: 3rem 0;
+}
+.card-carousel-wrapper a {
+  background-color: white;
+  color: hsl(108, 6%, 46%);
+}
+.card-carousel-wrapper a:hover {
+  color: rgb(77, 85, 75);
+  background-color: rgb(237, 240, 243);
+}
+.card-carousel-wrapper p {
   color: white;
 }
-.rating-wrapper .link-button {
-  display: inline-block;
-  padding: 1em 1.6em;
-  margin: 0 auto !important;
+.card-carousel-wrapper .card-carousel {
+  max-width: 60%;
 }
-.rating-wrapper .card {
+.card-carousel-wrapper .inner-card {
+  background-color: white;
   flex: 1 1 0;
-  padding: 2rem 4rem;
-  justify-content: space-around;
-  border-radius: 0;
+}
+.card-carousel-wrapper .inner-card p, .card-carousel-wrapper .inner-card h3, .card-carousel-wrapper .inner-card span {
+  color: hsl(108, 6%, 46%);
+}
+.card-carousel-wrapper .inner-card a {
+  width: 11.5rem;
+}
+.card-carousel-wrapper .inner-card .card-body {
+  padding: 3rem;
 }/*# sourceMappingURL=main.css.map */
