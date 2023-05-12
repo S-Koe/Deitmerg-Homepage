@@ -340,3 +340,10 @@ h3 {
         }
     }
 }
+
+#scroll-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+}
