@@ -1,0 +1,36 @@
+.button-dark {
+    display: inline-block;
+    padding: 1em 2em;    
+    background-color: $primary;
+    text-align: center;
+    color: white;
+    box-shadow: -1px 3px 6px rgba(0, 0, 0, 0.13);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    transition: background-color ease-in-out .2s;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+        color: white;
+        text-decoration: none;
+        background-color: rgb(86, 95, 86);
+    }
+}
+.button-light {
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: white;
+    text-align: center;
+    color: $primary;
+    box-shadow: -1px 3px 6px rgba(0, 0, 0, 0.13);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    transition: background-color ease-in-out .2s;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        color: rgb(77, 85, 75);
+        background-color: rgb(237, 240, 243);
+    }
+}

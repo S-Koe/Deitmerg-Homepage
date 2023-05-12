@@ -1,16 +1,15 @@
-.navbar {    
-    max-width: 72.5rem;
-    margin: auto;    
-}
-
 .nav-container {
-    max-width: 87rem;    
+    max-width: 100dvw;    
     margin: auto;
     background-color: white;
-    z-index: 9999;    
+    z-index: 9999;     
+   
 }
 
-
+.navbar {    
+    max-width: 72.5rem;
+    margin: auto;      
+}
 
 .nav-item {      
     color: $primary;
@@ -37,8 +36,8 @@
 @media (max-width: 1200px) {
     .navbar-collapse {
         padding-left: 2.5rem;        
-        margin: auto 0;          
-
+        margin: auto 0;
+        padding-top: 0;
     }
 
     .navbar-brand {

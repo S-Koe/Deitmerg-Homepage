@@ -1,13 +1,50 @@
-.navbar {
-  max-width: 72.5rem;
-  margin: auto;
+.button-dark {
+  display: inline-block;
+  padding: 1em 2em;
+  background-color: hsl(108, 6%, 46%);
+  text-align: center;
+  color: white;
+  box-shadow: -1px 3px 6px rgba(0, 0, 0, 0.13);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  transition: background-color ease-in-out 0.2s;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.button-dark:hover {
+  color: white;
+  text-decoration: none;
+  background-color: rgb(86, 95, 86);
+}
+
+.button-light {
+  display: inline-block;
+  padding: 1em 2em;
+  background-color: white;
+  text-align: center;
+  color: hsl(108, 6%, 46%);
+  box-shadow: -1px 3px 6px rgba(0, 0, 0, 0.13);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  transition: background-color ease-in-out 0.2s;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.button-light:hover {
+  color: rgb(77, 85, 75);
+  background-color: rgb(237, 240, 243);
 }
 
 .nav-container {
-  max-width: 87rem;
+  max-width: 100dvw;
   margin: auto;
   background-color: white;
   z-index: 9999;
+}
+
+.navbar {
+  max-width: 72.5rem;
+  margin: auto;
 }
 
 .nav-item {
@@ -37,6 +74,7 @@
   .navbar-collapse {
     padding-left: 2.5rem;
     margin: auto 0;
+    padding-top: 0;
   }
   .navbar-brand {
     padding-left: 2rem;
@@ -46,13 +84,47 @@
   font-family: "Ubuntu", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-padding, 100px);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  font-weight: 500;
+  color: rgb(70, 70, 71);
+  line-height: 1.9rem;
+}
+
+h2 {
+  color: hsl(108, 6%, 46%);
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.section-header h2 {
+  color: white;
+  text-align: center;
+  padding-bottom: 1.5em;
+}
+
+h3 {
+  color: hsl(108, 6%, 46%);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
 .carousel-top {
   max-width: 75rem;
   padding: 0 1rem;
-  width: 100%;
+  width: 95%;
 }
 .carousel-top .carousel-control-next img {
-  right: -1.5rem;
+  right: -1rem;
   position: absolute;
   display: block;
   width: 50px;
@@ -61,7 +133,7 @@
   margin-top: -25px;
 }
 .carousel-top .carousel-control-prev img {
-  left: -1.5rem;
+  left: -1rem;
   position: absolute;
   display: block;
   width: 50px;
@@ -75,34 +147,7 @@
   max-width: 46rem;
 }
 
-p {
-  font-weight: 500;
-  color: rgb(70, 70, 71);
-  line-height: 1.9rem;
-}
-
-.link-button {
-  display: block;
-  padding: 0.9rem 2rem;
-  background-color: hsl(108, 6%, 46%);
-  text-align: center;
-  color: white;
-  box-shadow: -1px 3px 6px rgba(0, 0, 0, 0.13);
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  transition: background-color ease-in-out 0.2s;
-  text-decoration: none;
-}
-.link-button:hover {
-  color: white;
-  text-decoration: none;
-  background-color: rgb(86, 95, 86);
-}
-.link-button:nth-child(2) {
-  width: 16rem;
-}
-
-.top-button {
+.margin-bottom {
   margin-bottom: 9rem;
 }
 
@@ -142,33 +187,8 @@ p {
   max-width: none;
 }
 
-h2 {
-  color: hsl(108, 6%, 46%);
-  font-size: 2.5rem;
-  font-weight: 900;
-}
-
-.section-header h2 {
-  color: white;
-  text-align: center;
-  padding-bottom: 1.5em;
-}
-
-h3 {
-  color: hsl(108, 6%, 46%);
-  font-weight: bold;
-  font-size: 1.3rem;
-}
-
 .background a {
   margin: 0 0 3em 0;
-  padding: 1em 2em;
-  background-color: white;
-  color: hsl(108, 6%, 46%);
-}
-.background a:hover {
-  color: rgb(77, 85, 75);
-  background-color: rgb(237, 240, 243);
 }
 @media (max-width: 1200px) {
   .background a {
@@ -178,12 +198,13 @@ h3 {
 @media (max-width: 900px) {
   .background a {
     margin: 0px;
+    padding: 1em;
   }
 }
 
 .card-wrapper-1 {
   background-color: hsl(108, 6%, 46%);
-  padding: 6em 8em;
+  padding: 6rem 2rem;
 }
 .card-wrapper-1 .card-body-top {
   padding: 3.5em 1.5em;
@@ -192,7 +213,6 @@ h3 {
   justify-content: space-between;
 }
 .card-wrapper-1 .card-body-top a {
-  width: 209px;
   margin: 0 auto;
 }
 .card-wrapper-1 .card-body-top h3 {
@@ -209,16 +229,6 @@ h3 {
     flex-direction: column;
     max-width: 25rem;
   }
-}
-.card-wrapper-1 .termin-button {
-  background-color: white;
-  color: hsl(108, 6%, 46%);
-  width: 16em;
-  margin: 4em auto 0;
-}
-.card-wrapper-1 .termin-button:hover {
-  color: rgb(77, 85, 75);
-  background-color: rgb(237, 240, 243);
 }
 
 .text-bottom {
@@ -252,7 +262,7 @@ h3 {
 @media (max-width: 1200px) {
   .hor-card {
     flex-direction: column !important;
-    width: 100%;
+    max-width: 70%;
   }
   .hor-card img {
     width: 100%;
@@ -263,7 +273,7 @@ h3 {
 }
 
 .rating-wrapper {
-  background-image: url("/images/jason-leem-50bzI1F6urA-unsplash.jpg");
+  background-image: url("/images/olena-sergienko-3BlVILvh9hM-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: hsl(108, 6%, 46%);
@@ -273,6 +283,7 @@ h3 {
 }
 .rating-wrapper .rating-group {
   max-width: 80%;
+  flex: 1 1 0;
 }
 .rating-wrapper .card-rating {
   display: flex;
@@ -288,25 +299,23 @@ h3 {
   width: 100%;
   padding: 3rem 0;
 }
-.card-carousel-wrapper a {
-  background-color: white;
-  color: hsl(108, 6%, 46%);
-}
-.card-carousel-wrapper a:hover {
-  color: rgb(77, 85, 75);
-  background-color: rgb(237, 240, 243);
-}
 .card-carousel-wrapper p {
   color: white;
 }
 .card-carousel-wrapper .card-carousel {
   max-width: 60%;
 }
+@media (max-width: 1100px) {
+  .card-carousel-wrapper .card-carousel {
+    max-width: 90%;
+  }
+}
 .card-carousel-wrapper .inner-card {
   background-color: white;
-  flex: 1 1 0;
 }
-.card-carousel-wrapper .inner-card p, .card-carousel-wrapper .inner-card h3, .card-carousel-wrapper .inner-card span {
+.card-carousel-wrapper .inner-card p,
+.card-carousel-wrapper .inner-card h3,
+.card-carousel-wrapper .inner-card span {
   color: hsl(108, 6%, 46%);
 }
 .card-carousel-wrapper .inner-card a {
@@ -314,4 +323,57 @@ h3 {
 }
 .card-carousel-wrapper .inner-card .card-body {
   padding: 3rem;
+}
+@media (max-width: 800px) {
+  .card-carousel-wrapper .inner-card {
+    flex-direction: column;
+  }
+  .card-carousel-wrapper .inner-card img {
+    width: 100% !important;
+    height: 50%;
+  }
+  .card-carousel-wrapper .inner-card .card-body {
+    width: 100% !important;
+    height: 50%;
+  }
+}
+
+.contact-wrapper {
+  padding: 7rem;
+}
+.contact-wrapper img {
+  width: 3.5rem;
+}
+.contact-wrapper span {
+  padding-top: 2rem;
+}
+.contact-wrapper .info {
+  flex: 1 1 0;
+}
+.contact-wrapper a {
+  margin-top: 5rem;
+}
+
+.wrapper {
+  background-color: hsl(108, 6%, 46%);
+  padding: 7rem 3rem 3rem 3rem;
+}
+.wrapper h2 {
+  padding-bottom: 2rem;
+}
+.wrapper p {
+  color: white;
+  max-width: 40rem;
+  padding-bottom: 3rem;
+}
+
+.footer a {
+  color: hsl(108, 6%, 46%);
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: block;
+}
+.footer a::hover {
+  color: rgb(77, 85, 75);
 }/*# sourceMappingURL=main.css.map */
